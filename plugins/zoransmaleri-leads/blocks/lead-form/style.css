@@ -1,0 +1,84 @@
+/* Quote form. Colours and fonts come from the theme's settings, so it matches any theme. */
+.npl-form { --npl-accent: var(--wp--preset--color--accent, #C2410C); --npl-ink: var(--wp--preset--color--ink, #0F2233); --npl-soft: var(--wp--preset--color--ink-soft, #44525F); --npl-line: #B9B3A6; --npl-pine: var(--wp--preset--color--pine, #1D5A46); --npl-pine-light: var(--wp--preset--color--pine-light, #E4EFEA); color: var(--npl-ink); }
+.npl-form fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+.npl-form fieldset:focus { outline: none; }
+.npl-form [hidden] { display: none !important; }
+
+.npl-legend { font-size: var(--wp--preset--font-size--large, 1.25rem); font-weight: 800; letter-spacing: -0.01em; line-height: 1.3; margin: 0 0 .9rem; padding: 0; }
+.npl-label { display: block; font-weight: 700; font-size: .9375rem; margin: 0 0 .35rem; }
+.npl-hint { margin: -.15rem 0 .4rem; font-size: .875rem; color: var(--npl-soft); }
+.npl-field + .npl-field { margin-top: 1rem; }
+
+.npl-input {
+	display: block; width: 100%; box-sizing: border-box; font: inherit; font-size: 1.0625rem; /* 17px stops iOS zooming in */
+	padding: .8rem .9rem; border: 2px solid var(--npl-line); border-radius: 10px; background: #fff; color: var(--npl-ink);
+	min-height: 52px;
+}
+.npl-input:focus { border-color: var(--npl-pine); outline: 3px solid color-mix(in srgb, var(--npl-pine) 30%, transparent); outline-offset: 0; }
+.npl-input[aria-invalid="true"] { border-color: #B42318; }
+.npl-input-short { max-width: 12rem; }
+
+.npl-error { color: #B42318; font-size: .9375rem; font-weight: 600; margin: .4rem 0 0; }
+.npl-error::before { content: "! "; font-weight: 800; }
+
+.npl-inline { display: flex; gap: .5rem; flex-wrap: wrap; }
+.npl-inline .npl-input { flex: 1 1 9rem; width: auto; }
+.npl-inline .npl-btn { flex: 1 1 auto; }
+
+.npl-btn {
+	font: inherit; font-weight: 700; font-size: 1.0625rem; line-height: 1.2; cursor: pointer; border: 0; border-radius: 10px;
+	background: var(--npl-accent); color: #fff; padding: .95rem 1.4rem; min-height: 52px;
+}
+.npl-btn:hover, .npl-btn:focus-visible { background: var(--wp--preset--color--accent-dark, #9A3412); }
+.npl-btn:disabled { opacity: .7; cursor: progress; }
+
+.npl-back { font: inherit; font-weight: 600; background: none; border: 0; color: var(--npl-ink); padding: .8rem .4rem; cursor: pointer; text-decoration: underline; min-height: 44px; }
+
+.npl-choices { display: grid; gap: .6rem; }
+@media (min-width: 560px) { .npl-choices { grid-template-columns: 1fr 1fr; } }
+.npl-choice { position: relative; display: flex; align-items: center; gap: .7rem; padding: .9rem 1rem; border: 2px solid var(--npl-line); border-radius: 12px; cursor: pointer; font-weight: 600; background: #fff; min-height: 56px; box-sizing: border-box; }
+.npl-choice:hover { border-color: var(--npl-pine); }
+.npl-choice input { width: 1.25rem; height: 1.25rem; margin: 0; accent-color: var(--npl-pine); flex: none; }
+.npl-choice:has(input:checked) { border-color: var(--npl-pine); background: var(--npl-pine-light); }
+.npl-choice:has(input:focus-visible) { outline: 3px solid var(--npl-pine); outline-offset: 2px; }
+fieldset[aria-invalid="true"] .npl-choice { border-color: #B42318; }
+
+.npl-nav { display: flex; align-items: center; justify-content: space-between; gap: .75rem; margin-top: 1.25rem; }
+.npl-nav .npl-btn { margin-left: auto; }
+.npl-steps:not(.is-stepped) .npl-step + .npl-step { margin-top: 1.75rem; }
+
+.npl-progress { margin-bottom: 1rem; }
+.npl-progress-text { margin: 0 0 .4rem; font-size: .875rem; font-weight: 700; color: var(--npl-pine); }
+.npl-bar { height: 6px; border-radius: 99px; background: var(--npl-pine-light); overflow: hidden; }
+.npl-bar span { display: block; height: 100%; width: 25%; background: var(--npl-pine); border-radius: inherit; transition: width .25s ease; }
+@media (prefers-reduced-motion: reduce) { .npl-bar span { transition: none; } }
+
+.npl-fineprint { font-size: .8125rem; color: var(--npl-soft); margin: .75rem 0 0; line-height: 1.45; }
+.npl-summary { border: 2px solid #B42318; border-radius: 10px; padding: .75rem 1rem; margin-bottom: 1rem; background: #FEF3F2; }
+.npl-summary p { margin: 0 0 .3rem; }
+.npl-summary ul { margin: 0; padding-left: 1.2rem; }
+.npl-summary a { color: #B42318; }
+
+/* Honeypot: off-screen, not display:none (some bots skip hidden fields). */
+.npl-hp { position: absolute !important; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+/* On dark sections. */
+.is-style-section-dark .npl-form .is-style-card, .is-style-section-dark .is-style-card .npl-form { color: var(--npl-ink); }
+
+/* Before view.js runs (JS is on, see tracking.php): show the form exactly as it will look, so nothing jumps. */
+.npl-js .npl-steps:not(.is-stepped) .npl-step,
+.npl-js .npl-steps:not(.is-stepped) [data-npl-submit],
+.npl-js .npl-steps:not(.is-stepped) [data-npl-consent] { display: none; }
+.npl-js .npl-steps[data-start="1"]:not(.is-stepped) .npl-step[data-step="1"],
+.npl-js .npl-steps[data-start="2"]:not(.is-stepped) .npl-step[data-step="2"],
+.npl-js .npl-steps[data-start="3"]:not(.is-stepped) .npl-step[data-step="3"],
+.npl-js .npl-steps[data-start="4"]:not(.is-stepped) .npl-step[data-step="4"] { display: block; }
+.npl-js .npl-steps[data-start="4"]:not(.is-stepped) [data-npl-submit],
+.npl-js .npl-steps[data-start="4"]:not(.is-stepped) [data-npl-consent] { display: block; }
+.npl-js .npl-form .npl-steps:not(.is-stepped) [data-npl-progress][hidden] { display: block !important; }
+.npl-js .npl-form .npl-steps:not([data-start="4"]):not(.is-stepped) [data-npl-next][hidden] { display: inline-block !important; }
+
+/* The "moves on by itself" hint only matters when the form is in steps. */
+.npl-steps:not(.is-stepped) .npl-auto-hint { display: none; }
+.npl-js .npl-steps .npl-auto-hint { display: block; }
+.npl-legend + .npl-auto-hint { margin-top: -.5rem; margin-bottom: .75rem; }

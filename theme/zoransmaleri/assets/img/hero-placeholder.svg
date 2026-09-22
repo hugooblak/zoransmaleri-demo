@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Platshållare: takbild">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#091620"/><stop offset="60%" stop-color="#142C3A"/><stop offset="100%" stop-color="#2A4A5C"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.78" cy="0.68" r="0.6">
+      <stop offset="0%" stop-color="#F2B33D" stop-opacity="0.9"/>
+      <stop offset="35%" stop-color="#D2691E" stop-opacity="0.38"/>
+      <stop offset="100%" stop-color="#C2410C" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="plane" x1="0.2" y1="0" x2="0.9" y2="1">
+      <stop offset="0%" stop-color="#16303F"/><stop offset="60%" stop-color="#0B1A24"/><stop offset="100%" stop-color="#060F16"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <ellipse cx="1240" cy="640" rx="820" ry="540" fill="url(#sun)"/>
+
+  <!-- neighbouring rooflines, far off -->
+  <path d="M0 742 L196 628 L392 742 Z" fill="#0B1A24" opacity="0.55"/>
+  <path d="M1268 742 L1452 616 L1600 716 L1600 742 Z" fill="#0B1A24" opacity="0.42"/>
+
+  <!-- one roof, seen from below and to the side -->
+  <path d="M232 900 L232 762 L826 402 L1420 762 L1420 900 Z" fill="url(#plane)"/>
+  <!-- ridge, catching the low sun -->
+  <path d="M826 402 L1420 762 L1420 776 L826 416 Z" fill="#F2B33D" opacity="0.62"/>
+  <path d="M826 402 L232 762 L232 776 L826 416 Z" fill="#F7E3B8" opacity="0.10"/>
+  <!-- tile courses, parallel to the eaves so they read as a surface -->
+  <g stroke="#DCE6EC" stroke-opacity="0.05" stroke-width="2.5">
+    <path d="M826 460 L1352 780"/><path d="M826 520 L1254 780"/><path d="M826 580 L1156 780"/>
+    <path d="M826 460 L300 780"/><path d="M826 520 L398 780"/><path d="M826 580 L496 780"/>
+  </g>
+  <!-- chimney and its shadow side -->
+  <path d="M1012 528 L1012 438 L1082 438 L1082 570 Z" fill="#060F16"/>
+  <path d="M1082 438 L1082 570 L1096 562 L1096 432 Z" fill="#16303F"/>
+  <path d="M1004 438 L1104 438 L1104 420 L1004 420 Z" fill="#0B1A24"/>
+</svg>

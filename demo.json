@@ -1,0 +1,38 @@
+{
+  "name": "Zorans Måleri",
+  "slug": "zoransmaleri",
+  "prefix": "zo",
+  "github_user": "hugooblak",
+  "github_repo": "zoransmaleri-demo",
+  "playground_url": "https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/hugooblak/zoransmaleri-demo/main/blueprint.json",
+  "platform": "wordpress",
+  "industry": "",
+  "site_type": "",
+  "features": [
+    "multi-step quote form",
+    "leads inbox with status + CSV export",
+    "UTM / click-ID source tracking",
+    "dataLayer conversion events",
+    "focus landing pages (no menu)",
+    "service pages",
+    "reviews + trust strip",
+    "FAQ",
+    "blog guides migrated from an old site with redirect list",
+    "privacy export/erase",
+    "reusable block patterns"
+  ],
+  "upwork_job_id": "",
+  "pages": [
+    "/",
+    "/roof-replacement/",
+    "/storm-damage/",
+    "/free-quote/",
+    "/about/",
+    "/faq/",
+    "/roofing-guides/",
+    "/how-long-does-a-roof-last/",
+    "/nope/"
+  ],
+  "plugins_from_wporg": [],
+  "copied_from": "granviktak"
+}

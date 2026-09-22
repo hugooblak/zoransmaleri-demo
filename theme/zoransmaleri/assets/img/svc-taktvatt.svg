@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" role="img" aria-label="Platshallare: svc-taktvatt">
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0%" stop-color="#1D4A46"/><stop offset="100%" stop-color="#0B1F1D"/></linearGradient>
+<radialGradient id="l" cx="0.72" cy="0.3" r="0.7"><stop offset="0%" stop-color="#7FD1C1" stop-opacity="0.5"/><stop offset="100%" stop-color="#7FD1C1" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="800" height="560" fill="url(#g)"/><rect width="800" height="560" fill="url(#l)"/>
+<path d="M0 560 L0 400 L400 180 L800 400 L800 560 Z" fill="#061513" opacity=".85"/>
+<path d="M400 180 L800 400 L800 416 L400 196 Z" fill="#7FD1C1" opacity=".55"/>
+<g stroke="#7FD1C1" stroke-opacity=".30" stroke-width="3" stroke-linecap="round"><path d="M250 300 L330 250"/><path d="M270 340 L360 285"/><path d="M300 380 L395 320"/></g>
+<circle cx="230" cy="290" r="4" fill="#7FD1C1" opacity=".5"/><circle cx="262" cy="330" r="3" fill="#7FD1C1" opacity=".4"/>
+</svg>

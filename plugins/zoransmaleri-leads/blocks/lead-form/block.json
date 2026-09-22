@@ -1,0 +1,20 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "zoransmaleri/lead-form",
+	"title": "Offertformulär",
+	"category": "widgets",
+	"icon": "feedback",
+	"description": "Multi-step quote form. 'Start' shows only the ZIP question and hands over to the full form. 'Full' shows all four steps.",
+	"keywords": [ "lead", "form", "quote", "contact" ],
+	"textdomain": "zoransmaleri-leads",
+	"attributes": {
+		"variant": { "type": "string", "enum": [ "start", "full" ], "default": "full" },
+		"buttonText": { "type": "string", "default": "" }
+	},
+	"supports": { "html": false, "multiple": true, "reusable": false },
+	"editorScript": "file:./editor.js",
+	"viewScript": "file:./view.js",
+	"style": "file:./style.css",
+	"render": "file:./render.php"
+}

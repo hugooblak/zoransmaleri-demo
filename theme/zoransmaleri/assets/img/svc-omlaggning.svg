@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" role="img" aria-label="Platshallare: svc-omlaggning">
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0%" stop-color="#16303F"/><stop offset="100%" stop-color="#0A151D"/></linearGradient>
+<radialGradient id="l" cx="0.72" cy="0.3" r="0.7"><stop offset="0%" stop-color="#F2B33D" stop-opacity="0.5"/><stop offset="100%" stop-color="#F2B33D" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="800" height="560" fill="url(#g)"/><rect width="800" height="560" fill="url(#l)"/>
+<path d="M60 560 L60 430 L400 210 L740 430 L740 560 Z" fill="#050C11" opacity=".85"/>
+<path d="M400 210 L740 430 L740 444 L400 224 Z" fill="#F2B33D" opacity=".6"/>
+<g stroke="#DCE6EC" stroke-opacity=".07" stroke-width="2"><path d="M400 260 L690 448"/><path d="M400 310 L620 452"/><path d="M400 260 L110 448"/><path d="M400 310 L180 452"/></g>
+</svg>
