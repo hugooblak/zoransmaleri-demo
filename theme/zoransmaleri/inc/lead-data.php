@@ -5,6 +5,7 @@
  */
 return array(
 	'foretag'        => 'Zorans Måleri',
+	'bransch'        => 'Målare',
 	'telefon'        => '073-631 01 64',
 	'telefon_tel'    => '+46736310164',
 	'ort'            => 'Mölndal',
